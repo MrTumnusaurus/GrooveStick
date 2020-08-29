@@ -1,0 +1,71 @@
+#VRML V2.0 utf8
+
+DEF Cart Transform {
+  children DEF Plane_Square Transform {
+    children DEF plane Transform {
+      children Shape {
+        appearance Appearance {
+          material Material {
+            diffuseColor 1 1 1
+          }
+        }
+        geometry IndexedFaceSet {
+          solid FALSE
+          normalIndex [
+            0, 0, 0, 0, -1 
+          ]
+          coordIndex [
+            0, 1, 2, 3, -1 
+          ]
+          normal Normal {
+            vector 0 0 1
+          }
+          coord DEF Plane_Square_IFS_Coord Coordinate {
+            point [
+              -10.0781 10.0781 0,
+              -10.0781 -10.078 0,
+              10.0781 -10.078 0,
+              10.0781 10.0781 0 
+            ]
+          }
+        }
+      }
+    }
+  }
+}
+DEF Pendulum Transform {
+  children DEF Plane_Square_0001 Transform {
+    children DEF plane_0001 Transform {
+      translation 0 30 0
+      scale 0.1 2 1
+      children Shape {
+        appearance Appearance {
+          material Material {
+            emissiveColor 1 0.2 0.2
+            diffuseColor 1 0.2 0.2
+          }
+        }
+        geometry IndexedFaceSet {
+          solid FALSE
+          normalIndex [
+            0, 0, 0, 0, -1 
+          ]
+          coordIndex [
+            0, 1, 2, 3, -1 
+          ]
+          normal Normal {
+            vector 0 0 1
+          }
+          coord DEF Plane_Square_IFS_Coord_0001 Coordinate {
+            point [
+              -10.0781 10.0781 0,
+              -10.0781 -10.078 0,
+              10.0781 -10.078 0,
+              10.0781 10.0781 0 
+            ]
+          }
+        }
+      }
+    }
+  }
+}
